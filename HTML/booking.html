@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Booking</title>
+    </head>
+    <body>
+
+        <center>
+            <form action="success.html">
+                <h1>Dine Booking</h1>
+                <label>Visitor Name: </label>
+                <input type="text" name="visitor" pattern="[A-Za-z]+" maxlength="20" autofocus>
+                <br/><br/>
+                <label>Number of members: </label>
+                <input type="number" name="mem" max="99">
+                <br/><br/>
+                <label>Contact No: </label>
+                <input type="number" name="phno" minlength="10" maxlength="10">
+                <br/><br/>
+                <label>Email: </label>
+                <input type="email" name="email">
+                <br/><br/>
+                <label>Type of Food: </label>
+                <input type="checkbox" name="food" value="southInd">South Indian 
+                <input type="checkbox" name="food" value="northInd">North Indian 
+                <input type="checkbox" name="food" value="chi">Chinese
+                <input type="checkbox" name="food" value="wes">Western
+                <br/><br/>
+                <label>Room Status: </label>
+                <input type="radio" name="ac" value="ac">AC 
+                <input type="radio" name="non-ac" value="non-ac">Non-AC
+                <br/><br/>
+                <label>Venue preference: </label>
+                <select>
+                    <option name="default">--SELECT--</option>
+                    <option name="araku">Araku</option>
+                    <option name="bang">Banglore</option>
+                    <option name="agra">Agra</option>
+                    <option name="paris">Paris</option>
+                    <option name="peru">Peru</option>
+                </select>
+                <br/><br/>
+                <input type="submit" name="submit" value="Book">
+            <input type="reset" name="reset" value="Reset">
+            </form>
+        </center>
+        
+    </body>
+</html>
