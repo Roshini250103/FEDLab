@@ -1,24 +1,28 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        <h1>Welcome To My Domain</h1>
-        <button onclick="sample()">Please Click it</button>
-        <h1 id="demo"></h1>
-
+    <head>
+        <title>String comparision</title>
         <script>
-        function sample() {
-        var s = "siva";
-        var s1 = "raman";
-        if(s==s1)
-        {
-            alert('two values are equal');
-        }
-        else
-        {
-            alert('two values are not equal');
-        }
-        }
+            function compare()
+            {
+                var a=document.getElementById("first").value;
+                var b=document.getElementById("second").value;
+                if(a==b)
+                {
+                    alert("Strings are equal");
+                }
+                else
+                {
+                    alert("Strings are not equal");
+                }
+            }
         </script>
-        
+    </head>
+    <body>
+        <input type="text" id="first" placeholder="Enter first string"/>
+        <br/><br/>
+        <input type="text" id="second" placeholder="Enter second string"/>
+        <br/><br/>
+        <button onclick="compare()">Compare
+        </button>
     </body>
 </html>
