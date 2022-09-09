@@ -1,29 +1,24 @@
 <html>
     <head>
-        <title>Reverse String</title>
+        <title>String reverse</title>
     </head>
     <body>
         <script>
-            function ReverseString(str) {
-             
-                if(!str || str.length < 2 ||
-                        typeof str!== 'string') {
-                    return 'Not valid';
-                }
-                 
-                
-                const revArray = [];
-                const length = str.length - 1;
-                 
-               
-                for(let i = length; i >= 0; i--) {
-                    revArray.push(str[i]);
-                }
-                 
-                return revArray.join('');
+            var str=prompt("Enter a string:");
+            if(!str || str.length<2 ||typeof str!=='string')
+            {
+                window.alert("Not valid");
             }
-            document.write("Given string is "+"Think IT Think VVIT<br/>")
-            document.write("Reverse of the string is "+ReverseString("Think IT Think VVIT"))
-            </script>
+            else{
+                const ar=[];
+                const rev="";
+                var length=str.length-1;
+                for(let i=length; i>=0; i--)
+                {
+                    ar.push(str[i]);
+                }
+                window.alert(ar.join(''));
+            }
+        </script>
     </body>
 </html>
