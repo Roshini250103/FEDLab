@@ -1,25 +1,26 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Alphanumeric</title>
-</head>
-<body>
-    <script>
-        function alphanumeric(inputtxt)
-        {
-            var pattern = /^[0-9a-zA-Z]+$/;
-            if((inputtxt.match(pattern)) )
+    <head>
+        <title>Alphanumeric</title>
+        <script>
+            function alphanumeric()
             {
-                alert('This is alphanumeric');
-                return true;
+                var val= document.getElementById("str").value;
+                var pattern= /^[0-9a-zA-Z]$/;
+                if(val.match(pattern))
+                {
+                    alert("Alphanumeric");
+                }
+                else
+                {
+                    alert("Not alphanumeric");
+                }
             }
-            else
-            {
-                alert("Enter a alpha numeric number");
-                return false;
-            }
-        }
-        document.write(alphanumeric("$"))
-</script>
-</body>
+        </script>
+    </head>
+    <body>
+        <input type="text" id="str" placeholder="Enter alphanumeric value"/>
+        <br/><br/>
+        <button onclick="alphanumeric()">Alphanumeric?
+        </button>
+    </body>
 </html>
